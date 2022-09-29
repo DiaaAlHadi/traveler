@@ -60,10 +60,10 @@ export default function Employees() {
                         <td>{item.isAdmin}</td>
                         <td>{item.created_at}</td>
                         <td>{item.updated_at}</td>
-                        <td><Link to={`editemployee/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="/images/edit.png" alt="edit" /></button></Link></td>
+                        <td><Link to={`editemployee/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="./images/edit.png" alt="edit" /></button></Link></td>
                         <td>
                             <button className="btn btn-background btn-sm text-light" onClick={(e)=> deleteitem(e, item.id)}>
-                                <img src="/images/delete.png" alt="delete" />
+                                <img src="./images/delete.png" alt="delete" />
                             </button>
                         </td>
                     </tr>
@@ -80,7 +80,7 @@ export default function Employees() {
                             <span className="h4">Add a New Employee
                                 <Link to='newemployee'>
                                     <button className="btn btn-background btn-sm text-light ms-2">
-                                        <img src="/images/add.png" alt="add new employee" />
+                                        <img src="./images/add.png" alt="add new employee" />
                                     </button>
                                 </Link>
                             </span>

@@ -49,10 +49,10 @@ export default function Customers() {
                         <td>{item.address}</td>
                         <td>{item.created_at}</td>
                         <td>{item.updated_at}</td>
-                        <td><Link to={`editcustomer/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="/images/edit.png" alt="edit" /></button></Link></td>
+                        <td><Link to={`editcustomer/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="./images/edit.png" alt="edit" /></button></Link></td>
                         <td>
                             <button className="btn btn-background btn-sm text-light" onClick={(e)=> deleteitem(e, item.id)}>
-                                <img src="/images/delete.png" alt="delete" />
+                                <img src="./images/delete.png" alt="delete" />
                             </button>
                         </td>
                     </tr>
@@ -70,7 +70,7 @@ export default function Customers() {
                             <span className="h4">Add a New Customer
                                 <Link to='newcustomer'>
                                     <button className="btn btn-background btn-sm text-light ms-2">
-                                        <img src="/images/add.png" alt="add new customer" />
+                                        <img src="./images/add.png" alt="add new customer" />
                                     </button>
                                 </Link>
                             </span>

@@ -81,10 +81,10 @@ export default function Reservations() {
                         <td>{item.vip}</td>
                         <td>{item.created_at}</td>
                         <td>{item.updated_at}</td>
-                        <td><Link to={`edittouristreservation/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="/images/edit.png" alt="edit" /></button></Link></td>
+                        <td><Link to={`edittouristreservation/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="./images/edit.png" alt="edit" /></button></Link></td>
                         <td>
                             <button className="btn btn-background btn-sm text-light" onClick={(e)=> deleteitem2(e, item.id)}>
-                                <img src="/images/delete.png" alt="delete" />
+                                <img src="./images/delete.png" alt="delete" />
                             </button>
                         </td>
                     </tr>
@@ -108,12 +108,12 @@ export default function Reservations() {
                         <td>{item.updated_at}</td>
                         <td><Link to={`editflightreservation/${item.id}`}>
                             <button className="btn btn-background btn-sm text-light">
-                                <img src="/images/edit.png" alt="edit" />
+                                <img src="./images/edit.png" alt="edit" />
                             </button></Link>
                         </td>
                         <td>
                             <button className="btn btn-background btn-sm text-light" onClick={(e)=> deleteitem(e, item.id)}>
-                                <img src="/images/delete.png" alt="delete" />
+                                <img src="./images/delete.png" alt="delete" />
                             </button>
                         </td>
                     </tr>
@@ -138,7 +138,7 @@ export default function Reservations() {
                                     <span className="h4">Add a New Reservation
                                         <Link to='touristreservation'>
                                             <button className="btn btn-background btn-sm text-light ms-2">
-                                                <img src="/images/add.png" alt="add new reservation" />
+                                                <img src="./images/add.png" alt="add new reservation" />
                                             </button>
                                         </Link>
                                     </span>
@@ -175,7 +175,7 @@ export default function Reservations() {
                                     <span className="h4">Add a New Reservation
                                         <Link to='flighttripreservation'>
                                             <button className="btn btn-background btn-sm text-light ms-2">
-                                                <img src="/images/add.png" alt="add new reservation" />
+                                                <img src="./images/add.png" alt="add new reservation" />
                                             </button>
                                         </Link>
                                     </span>

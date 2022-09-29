@@ -26,7 +26,7 @@ export default function Dashboard() {
                             <div className="Reservations col-xl-3 col-lg-3 p-3 my-2 me-lg-2">
                                 <Link to="reservations" className=" text-center  Reservations-link ">
                                     <div>
-                                        <img src="../images/reservation.png" alt="Reservations icon" height="50px" width="50px" />
+                                        <img src="./images/reservation.png" alt="Reservations icon" height="50px" width="50px" />
                                         <h3 className="mt-3">Reservations</h3>
                                     </div>
                                 </Link>
@@ -34,7 +34,7 @@ export default function Dashboard() {
                             <div className="Customers col-xl-3 col-lg-3 p-3 my-2 me-lg-2">
                                 <Link to='customers' className=" text-center  Customers-link ">
                                     <div>
-                                        <img src="../images/costumer.png" alt="Customers icon" height="50px" width="50px" />
+                                        <img src="./images/costumer.png" alt="Customers icon" height="50px" width="50px" />
                                         <h3 className="mt-3">Customers</h3>
                                     </div>
                                 </Link>
@@ -42,7 +42,7 @@ export default function Dashboard() {
                             <div className="col-xl-3 col-lg-3 p-3 my-2 me-lg-2 Flights">
                                 <Link to="flights" className=" text-center  Flights-link ">
                                     <div>
-                                        <img src="../images/flights.png" alt="Flights icon" height="50px" width="50px" />
+                                        <img src="./images/flights.png" alt="Flights icon" height="50px" width="50px" />
                                         <h3 className="mt-3">Flights</h3>
                                     </div>
                                 </Link>
@@ -51,7 +51,7 @@ export default function Dashboard() {
                             role !== 0 && <div className="Employees col-xl-11 col-lg-11 p-3 my-2 me-lg-2 ">
                                 <Link to="employees" className=" text-center  Employees-link ">
                                     <div>
-                                        <img src="../images/employees.png" alt="Employees icon" height="50px" width="50px" />
+                                        <img src="./images/employees.png" alt="Employees icon" height="50px" width="50px" />
                                         <h3 className="mt-3">Employees</h3>
                                     </div>
                                 </Link>

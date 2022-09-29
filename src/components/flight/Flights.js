@@ -68,10 +68,10 @@ export default function Flights() {
                     <td>{item.starttime}</td>
                     <td>{item.created_at}</td>
                     <td>{item.updated_at}</td>
-                    <td><Link to={`editflighttrip/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="/images/edit.png" alt="edit" /></button></Link></td>
+                    <td><Link to={`editflighttrip/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="./images/edit.png" alt="edit" /></button></Link></td>
                     <td>
                         <button className="btn btn-background btn-sm text-light" onClick={(e)=> deleteitem(e, item.id)}>
-                            <img src="/images/delete.png" alt="delete" />
+                            <img src="./images/delete.png" alt="delete" />
                         </button>
                     </td>
                 </tr>
@@ -93,10 +93,10 @@ export default function Flights() {
                     <td>{item.starttime}</td>
                     <td>{item.created_at}</td>
                     <td>{item.updated_at}</td>
-                    <td><Link to={`edittouristtrip/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="/images/edit.png" alt="edit" /></button></Link></td>
+                    <td><Link to={`edittouristtrip/${item.id}`}><button className="btn btn-background btn-sm text-light"><img src="./images/edit.png" alt="edit" /></button></Link></td>
                     <td>
                         <button className="btn btn-background btn-sm text-light" onClick={(e)=> deleteitem2(e, item.id)}>
-                            <img src="/images/delete.png" alt="delete" />
+                            <img src="./images/delete.png" alt="delete" />
                         </button>
                     </td>
                 </tr>
@@ -120,7 +120,7 @@ export default function Flights() {
                                 <span className="h4">Create Tourist Trip
                                     <Link to='newtouristtrip'>
                                         <button className="btn btn-background btn-sm text-light ms-2">
-                                            <img src="/images/add.png" alt="create tourist trip button" />
+                                            <img src="./images/add.png" alt="create tourist trip button" />
                                         </button>
                                     </Link>
                                 </span>
@@ -156,7 +156,7 @@ export default function Flights() {
                                 <span className="h4">Create Flight Trip
                                     <Link to='newflighttrip'>
                                         <button className="btn btn-background btn-sm text-light ms-2">
-                                            <img src="/images/add.png" alt="create flight trip button" />
+                                            <img src="./images/add.png" alt="create flight trip button" />
                                         </button>
                                     </Link>
                                 </span>
