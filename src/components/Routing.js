@@ -1,5 +1,5 @@
 import MasterLayout from './shaerdlayout/MasterLayout';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Dashboard from './Dashboard';
 import Flights from './flight/Flights';
 import Login from './Login';
@@ -21,7 +21,7 @@ import EditTouristReservation from './reservations/EditTouristReservation'
 
 export default function Routing() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path='/' element={<Navigate replace to="/dashboard" />} />
@@ -52,6 +52,6 @@ export default function Routing() {
           <Route path="customers/editcustomer/:id" element={<EditCustomer />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
