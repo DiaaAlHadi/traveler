@@ -14,7 +14,7 @@ export default function Flights() {
     const[flightTripList,setFlightTripList]=useState([]);
     const[touristTripList,setTourisTripList]=useState([]);
     useEffect(()=>{
-        axios.get(`http://tourism-agency.ddns.net/api/flighttrips`).then(res=>{
+        axios.get(`https://tourism-agency.ddns.net/api/flighttrips`).then(res=>{
             if(res.status === 200)
             {
                 setFlightTripList(res.data)
@@ -23,7 +23,7 @@ export default function Flights() {
         });
     },[]);
     useEffect(()=>{
-        axios.get(`http://tourism-agency.ddns.net/api/touristtrips`).then(res=>{
+        axios.get(`https://tourism-agency.ddns.net/api/touristtrips`).then(res=>{
             if(res.status === 200)
             {
                 setTourisTripList(res.data)
@@ -34,7 +34,7 @@ export default function Flights() {
     const deleteitem = (e,id)=>{
         e.preventDefault();
         const thisClicked = e.currentTarget;
-        axios.delete(`http://tourism-agency.ddns.net/api/deleteflighttrip/${id}`).then(res=>{
+        axios.delete(`https://tourism-agency.ddns.net/api/deleteflighttrip/${id}`).then(res=>{
             swal("Success","Flight Trip Was Deleted Successflly","success");
             thisClicked.closest("tr").remove();
         }).catch(err=>{
@@ -44,7 +44,7 @@ export default function Flights() {
     const deleteitem2 = (e,id)=>{
         e.preventDefault();
         const thisClicked = e.currentTarget;
-        axios.delete(`http://tourism-agency.ddns.net/api/deletetouristtrip/${id}`).then(res=>{
+        axios.delete(`https://tourism-agency.ddns.net/api/deletetouristtrip/${id}`).then(res=>{
             swal("Success","Torist Tirp Was Deleted Successflly","success");
             thisClicked.closest("tr").remove();
         }).catch(err=>{

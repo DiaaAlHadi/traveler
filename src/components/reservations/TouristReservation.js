@@ -29,7 +29,7 @@ export default function FlightTripReservation() {
             vip: reservation.vip,
         }
 
-        axios.post(`http://tourism-agency.ddns.net/api/addtouristtripbooking`, data).then(res => {
+        axios.post(`https://tourism-agency.ddns.net/api/addtouristtripbooking`, data).then(res => {
             swal("Success", "reservation added successfully!", "success");
             Navigation("/reservations");
         }).catch(err=>{

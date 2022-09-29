@@ -15,7 +15,7 @@ export default function Reservations() {
     const [touristReservation, setTouristReservation] = useState([]);
     useEffect(() => {
         axios
-            .get(`http://tourism-agency.ddns.net/api/flighttripbookings`)
+            .get(`https://tourism-agency.ddns.net/api/flighttripbookings`)
             .then(res1 => {
                 if (res1.status === 200) {
                     setFlightReservation(res1.data)
@@ -29,7 +29,7 @@ export default function Reservations() {
     }, []);
     useEffect(() => {
         axios
-            .get(`http://tourism-agency.ddns.net/api/touristtripbookings`)
+            .get(`https://tourism-agency.ddns.net/api/touristtripbookings`)
             .then(res2 => {
 
                 if (res2.status === 200) {
@@ -46,7 +46,7 @@ export default function Reservations() {
     const deleteitem = (e,id)=>{
         e.preventDefault();
         const thisClicked = e.currentTarget;
-        axios.delete(`http://tourism-agency.ddns.net/api/deleteflighttripbooking/${id}`).then(res=>{
+        axios.delete(`https://tourism-agency.ddns.net/api/deleteflighttripbooking/${id}`).then(res=>{
             swal("Success","Reservation Was Deleted Successflly","success");
             thisClicked.closest("tr").remove();
         }).catch(err=>{
@@ -56,7 +56,7 @@ export default function Reservations() {
     const deleteitem2 = (e,id)=>{
         e.preventDefault();
         const thisClicked = e.currentTarget;
-        axios.delete(`http://tourism-agency.ddns.net/api/deletetouristtripbooking/${id}`).then(res=>{
+        axios.delete(`https://tourism-agency.ddns.net/api/deletetouristtripbooking/${id}`).then(res=>{
             swal("Success","Reservation Was Deleted Successflly","success");
             thisClicked.closest("tr").remove();
         }).catch(err=>{

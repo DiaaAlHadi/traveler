@@ -33,7 +33,7 @@ export default function NewEmployee() {
             address: employee.address,
             isAdmin: employee.isAdmin
         }
-        axios.post(`http://tourism-agency.ddns.net/api/adduser`, data).then(res => {
+        axios.post(`https://tourism-agency.ddns.net/api/adduser`, data).then(res => {
             swal('Success', 'User Added Successflly', 'success');
             Navigation("/employees");
         }).catch(err=>{

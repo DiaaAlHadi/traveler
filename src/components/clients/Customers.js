@@ -12,7 +12,7 @@ export default function Customers() {
     const [loading, setLoading] = useState(true);
     const [customersList, setCustomerLits] = useState([]);
     useEffect(() => {
-        axios.get(`http://tourism-agency.ddns.net/api/clients`).then(res => {
+        axios.get(`https://tourism-agency.ddns.net/api/clients`).then(res => {
             if (res.status === 200) {
                 setCustomerLits(res.data);
                 setLoading(false);
@@ -25,7 +25,7 @@ export default function Customers() {
     const deleteitem = (e,id)=>{
         e.preventDefault();
         const thisClicked = e.currentTarget;
-        axios.delete(`http://tourism-agency.ddns.net/api/deleteclient/${id}`).then(res=>{
+        axios.delete(`https://tourism-agency.ddns.net/api/deleteclient/${id}`).then(res=>{
             swal("Success","Customer Was Deleted Successflly","success");
             thisClicked.closest("tr").remove();
         }).catch(err=>{

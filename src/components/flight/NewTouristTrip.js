@@ -27,7 +27,7 @@ export default function NewTouristTrip() {
             destination_airport: touristTrip.destination_airport,
             starttime: touristTrip.starttime,
         }
-        axios.post(`http://tourism-agency.ddns.net/api/addtouristtrip`, data).then(res => {
+        axios.post(`https://tourism-agency.ddns.net/api/addtouristtrip`, data).then(res => {
             swal("Success", "Tourist Trip Has Been Added", "success")
             Navigation("/flights");
         }).catch(err => {

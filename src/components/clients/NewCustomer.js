@@ -29,7 +29,7 @@ export default function NewCustomer() {
             phone: customer.phone,
             address: customer.address,
         }
-        axios.post(`http://tourism-agency.ddns.net/api/addclient`, data).then(res => {
+        axios.post(`https://tourism-agency.ddns.net/api/addclient`, data).then(res => {
             swal("Success","Customer were Added Successfully.","success");
             Navigation("/customers");
         }).catch(res=>{

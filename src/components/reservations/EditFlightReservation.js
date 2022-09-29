@@ -16,7 +16,7 @@ export default function FlightTripReservation() {
         error_list: []
     })
     useEffect(() => {
-        axios.get(`http://tourism-agency.ddns.net/api/flighttripbookings/${id}`).then(res => {
+        axios.get(`https://tourism-agency.ddns.net/api/flighttripbookings/${id}`).then(res => {
             setReservation(res.data);
             setLoading(false);
         }).catch(res => {
@@ -31,7 +31,7 @@ export default function FlightTripReservation() {
     const updateReservation = (e) => {
         e.preventDefault();
         const data = reservation;
-        axios.put(`http://tourism-agency.ddns.net/api/updateflighttripbooking/${idnum}`, data).then(res => {
+        axios.put(`https://tourism-agency.ddns.net/api/updateflighttripbooking/${idnum}`, data).then(res => {
             swal("Success", "Reservatoin Information Updated Successfly", "success");
             Navigation("/reservation");
         }).catch(err => {

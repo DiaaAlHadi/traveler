@@ -14,7 +14,7 @@ export default function Employees() {
     const [employeeList, setEmployeeList] = useState([]);
     useEffect(() => {
         axios
-            .get(`http://tourism-agency.ddns.net/api/users`)
+            .get(`https://tourism-agency.ddns.net/api/users`)
             .then((res) => {
                 if (res.status === 200) {
                     setEmployeeList(res.data);
@@ -35,7 +35,7 @@ export default function Employees() {
     const deleteitem = (e,id)=>{
         e.preventDefault();
         const thisClicked = e.currentTarget;
-        axios.delete(`http://tourism-agency.ddns.net/api/deleteuser/${id}`).then(res=>{
+        axios.delete(`https://tourism-agency.ddns.net/api/deleteuser/${id}`).then(res=>{
             swal("Success","Employee Was Deleted Successflly","success");
             thisClicked.closest("tr").remove();
         }).catch(err=>{

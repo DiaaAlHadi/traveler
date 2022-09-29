@@ -16,7 +16,7 @@ export default function EditEmployee() {
         error_list: []
     })
     useEffect(() => {
-        axios.get(`http://tourism-agency.ddns.net/api/users/${id}`).then(res => {
+        axios.get(`https://tourism-agency.ddns.net/api/users/${id}`).then(res => {
             setEmployee(res.data);
             setLoading(false);
         }).catch(res => {
@@ -31,7 +31,7 @@ export default function EditEmployee() {
     const updateEmployee = (e) => {
         e.preventDefault();
         const data = employee;
-        axios.put(`http://tourism-agency.ddns.net/api/updateuser/${idnum}`, data).then(res => {
+        axios.put(`https://tourism-agency.ddns.net/api/updateuser/${idnum}`, data).then(res => {
             swal("Success", "employee Information Updated Successfly", "success");
             Navigation("/employees");
         }).catch(err => {

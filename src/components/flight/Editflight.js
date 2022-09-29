@@ -16,7 +16,7 @@ export default function Editflight() {
         error_list: []
     })
     useEffect(() => {
-        axios.get(`http://tourism-agency.ddns.net/api/flighttrips/${id}`, { validateStatus: false }).then(res => {
+        axios.get(`https://tourism-agency.ddns.net/api/flighttrips/${id}`, { validateStatus: false }).then(res => {
             setFlightTrip(res.data);
             setLoading(false);
         }).catch(res => {
@@ -31,7 +31,7 @@ export default function Editflight() {
     const updateFlight = (e) => {
         e.preventDefault();
         const data = flightTrip;
-        axios.put(`http://tourism-agency.ddns.net/api/updateflighttrip/${idnum}`, data).then(res => {
+        axios.put(`https://tourism-agency.ddns.net/api/updateflighttrip/${idnum}`, data).then(res => {
             swal("Success","flight Trip Information Updated Successfully","success");
             Navigation("/flights");
         }).catch(err => {

@@ -34,7 +34,7 @@ export default function Login() {
       email: LogInInput.email,
       password: LogInInput.password
     }
-    axios.post(`http://tourism-agency.ddns.net/api/login`, data).then(res => {
+    axios.post(`https://tourism-agency.ddns.net/api/login`, data).then(res => {
       if (res.data.error !== 0) {
         setLogInInput({ ...LogInInput, error: res.data.msg });
       } else {

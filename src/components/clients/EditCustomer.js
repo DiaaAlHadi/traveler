@@ -16,7 +16,7 @@ export default function EditCustomer() {
         error_list:[]
     })
     useEffect(() => {
-        axios.get(`http://tourism-agency.ddns.net/api/clients/${id}`).then(res => {
+        axios.get(`https://tourism-agency.ddns.net/api/clients/${id}`).then(res => {
             setCustomer(res.data);
             setLoading(false);
         }).catch(res => {
@@ -31,7 +31,7 @@ export default function EditCustomer() {
     const updateCustomer = (e) => {
         e.preventDefault();
         const data = customer;
-        axios.put(`http://tourism-agency.ddns.net/api/updateclient/${idnum}`, data).then(res => {
+        axios.put(`https://tourism-agency.ddns.net/api/updateclient/${idnum}`, data).then(res => {
             swal("Success","Customer Information Updated Successfly","success");
             Navigation("/customers");
         }).catch(err=>{

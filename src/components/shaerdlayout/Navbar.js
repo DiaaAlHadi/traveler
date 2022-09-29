@@ -7,7 +7,7 @@ export default function Navbar() {
     
     const logoutSubmit = (e) => {
         e.preventDefault();
-        axios.post(`http://tourism-agency.ddns.net/api/logout`).then(res => {
+        axios.post(`https://tourism-agency.ddns.net/api/logout`).then(res => {
             swal("Success", "Loged Out Successfully", "success");
             localStorage.removeItem('auth_token', res.data.token);
             localStorage.removeItem('auth_Admin');
