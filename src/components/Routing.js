@@ -24,8 +24,8 @@ export default function Routing() {
     <HashRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path='/' element={<Navigate replace to="/dashboard" />} />
-        <Route path="/" element={<MasterLayout />} >
+        <Route path="" element={<Navigate replace to="/dashboard" />} />
+        <Route path="" element={<MasterLayout />} >
           <Route index element={<Dashboard />} />
 
           {/* flight routes */}
