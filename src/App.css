@@ -1,0 +1,11 @@
+
+.gradient-custom{
+  background-image: url(../public/images/login-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.trip-custom{
+  background-image: url(../public/images/tripbooking.jpg);
+  background-position: left;
+  background-size: cover;
+}

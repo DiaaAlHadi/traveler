@@ -1,0 +1,220 @@
+/* body {
+    background-color: #007FFF;
+} */
+
+
+.text-brand {
+  color: #FCC07C;
+}
+
+.bg-nav {
+  background-color: #0C0E49;
+  padding: 2px auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
+}
+
+.bg-out {
+  color: #fff !important;
+  border: 1px solid white !important;
+  font-weight: bold !important;
+}
+
+.bg-out:hover,
+.bg-out:focus {
+  color: #114A96 !important;
+  background-color: #fff !important;
+  border: 1px solid #114A96 !important;
+  font-weight: bold;
+}
+
+
+.main-card {
+  padding: 3%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: 2px solid rgba(12, 14, 73, .8);
+  box-shadow: 0 1px #0C0E49;
+  color: #0C0E49 !important;
+}
+
+.profile-img {
+  position: relative;
+  top: 20%;
+  border: 3px solid white;
+}
+
+.Reservations {
+  background-color: #0C0E49;
+
+  border-radius: 8px;
+}
+
+.Reservations:hover {
+  background-color: rgba(12, 14, 73, 0.9);
+}
+
+.Customers {
+  background-color: #0C0E49;
+  border-radius: 8px;
+}
+
+.Customers:hover {
+  background-color: rgba(12, 14, 73, 0.9);
+}
+
+.Flights {
+  background-color: #0C0E49;
+  border-radius: 8px;
+}
+
+.Flights:hover {
+  background-color: rgba(12, 14, 73, 0.9);
+}
+
+.Employees {
+  background-color: #0C0E49;
+  border-radius: 8px;
+}
+
+.Employees:hover {
+  background-color: rgba(12, 14, 73, 0.9);
+}
+
+.main-row {
+  margin-top: -5px;
+  justify-content: space-between;
+}
+
+.second-row {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.Reservations-link {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #72FFFF;
+}
+
+.Reservations-link:hover {
+  color: #72FFFF;
+
+}
+
+.Customers-link {
+  text-decoration: none;
+  color: #72FFFF;
+}
+
+.Customers-link:hover {
+  color: #72FFFF;
+}
+
+.Flights-link {
+  text-decoration: none;
+  color: #72FFFF;
+}
+
+.Flights-link:hover {
+  color: #72FFFF;
+}
+
+.Employees-link {
+  text-decoration: none;
+  color: #72FFFF;
+}
+
+.Employees-link:hover {
+  color: #72FFFF;
+}
+
+.main-border {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.trips-colors {
+  color: #0C0E49 !important;
+  text-decoration: none;
+}
+
+.trips-colors:hover {
+  color: #0C0E49 !important;
+  text-decoration: none;
+  transform: scale(1.05);
+  background: linear-gradient(to right, #89CFF0, #7CB9E8, #0C0E49);
+}
+
+.btn-background {
+  background-color: #0C0E49 !important;
+}
+
+.main-color {
+  color: #0C0E49;
+}
+
+.copyright {
+  background-color: #0C0E49
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f093fb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.border-radius-custem {
+  border-radius: 15px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.error_list {
+  border: 1px solid;
+  transition: ease-out;
+  transition-duration: 2s;
+}
+.error_color{
+  color:red;
+}
